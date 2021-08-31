@@ -1,20 +1,21 @@
-import React, { Component } from 'react'
-import { BrowserRouter, Route } from 'react-router-dom'
+import React from "react";
+import "./App.css";
+import Container from "./components/Container";
+import Sidebar from "./components/Sidebar";
 
-import Navigation from './components/Navigation'
-import Search from './pages/Search'
-import About from './pages/About'
+// https://api.github.com/search/repositories?q=html
+function App() {
 
-class App extends Component {
-  render() {
-    return (
-      <BrowserRouter>
-        <Navigation />
-        <Route path="/" exact component={Search} />
-        <Route path="/about" exact component={About} />
-      </BrowserRouter>
-    )
-  }
+  return (
+    <div className="d-flex flex-row m-2"> 
+      <div className="col-md-3 d-none d-md-block">
+        <Sidebar/>
+      </div>
+      <div className="col-md-9 col-12">
+        <Container/>
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;

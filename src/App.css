@@ -1,0 +1,45 @@
+.github_search_input {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    padding: 1rem 0.5rem;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+  }
+  
+  .github_search_input:focus {
+    border-bottom: 1px solid #111;
+  }
+  
+  .repo_list {
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+  }
+
+.color-text-secondary {
+    color: #57606a
+}
+
+.mr-3{
+  margin-right: 3rem;
+}
+.avatar-user {
+  border-radius: 50%!important;
+}
+
+.vcard-fullname {
+  font-size: 26px;
+  line-height: 1.25;
+}
+.vcard-username {
+  color: #57606a;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+}
+/* .d-flex{
+    display: flex;
+} */
