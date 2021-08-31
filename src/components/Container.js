@@ -22,7 +22,6 @@ function Container() {
         return response.json();
       })
       .then(data => {
-        console.log(data);
         setIsLoading(false);
         setRepos(data.items);
       })
@@ -32,8 +31,6 @@ function Container() {
         console.error(err);
       });
   }, [inputValue]);
-
-  console.log(repos)
 
   return (
     <div>
